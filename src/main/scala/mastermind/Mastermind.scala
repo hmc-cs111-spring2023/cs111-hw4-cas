@@ -20,7 +20,7 @@ def getRandomColor(): Color =
 
 /** Given four colors, make a board from them */
 def makeBoardFromColors(c1: Color, c2: Color, c3: Color, c4: Color): Board =
-  Board = c1.toString() + " " + c2.toString() + " " + c3.toString() + " " + c4.toString()
+  Board = c1.toString() + c2.toString() + c3.toString() + c4.toString()
   Board
 
 /** Create a random board */
