@@ -4,7 +4,7 @@ import org.scalatest.matchers.should._
 class CollatzSpec extends AnyFunSuite with Matchers:
 
     test("collatz 6") {
-        collatz(6) should be (3)
+        collatz(6) should be(3)
     }
 
     test("collatz 7") {
@@ -33,6 +33,18 @@ class CollatzCountSpec extends AnyFunSuite with Matchers:
 
     test("collatzCount 1") {
         collatzCount(1) should be (0)
+    }
+
+    test("collatzCount 101") {
+        collatzCount(101) should be (25)
+    }
+
+    test("collatzCount 1111") {
+        collatzCount(1111) should be (31)
+    }
+
+    test("collatzCount 267") {
+        collatzCount(267) should be (21)
     }
 
 end CollatzCountSpec

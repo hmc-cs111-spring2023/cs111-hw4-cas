@@ -6,3 +6,5 @@ def collatzCount(n: Int): Int =
     if n == 1 then 0
     else collatzCount(collatz(n)) + 1
 
+@main def main: Unit = 
+    println(collatzCount(101))
